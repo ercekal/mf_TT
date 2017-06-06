@@ -18,7 +18,6 @@ class Items extends Component {
         </div>
       )
     } else {
-      console.log(this.props);
       return (
         <div>
           <table>
@@ -26,7 +25,7 @@ class Items extends Component {
               <tr>
                 {this.props.items.map((item) => {
                   return (
-                    <th>
+                    <th style={{width: 300}}>
                       <ItemInfo key={item.code} item={item} />
                     </th>
                   )
@@ -34,8 +33,6 @@ class Items extends Component {
               </tr>
             </thead>
           </table>
-          <div>
-          </div>
         </div>
       )
     }
