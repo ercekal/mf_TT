@@ -1,5 +1,5 @@
 import React from 'react';
-import Items from './containers/items.js';
+import Items from './containers/items';
 
 export default class App extends React.Component {
 

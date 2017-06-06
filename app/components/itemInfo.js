@@ -18,9 +18,9 @@ export default class ItemInfo extends Component {
   render() {
     return (
       <div>
-        <img src={item.thumbnail} />
-        <p>{item.name}</p>
-        <p>{item.priceData.formattedValue}</p>
+        <img src={this.props.item.thumbnail} />
+        <p>{this.props.item.name}</p>
+        <p>{this.props.item.priceData.formattedValue}</p>
       </div>
     )
   }

@@ -36,7 +36,6 @@ class Items extends Component {
           </table>
           <div>
           </div>
-          {this.renderItemList()}
         </div>
       )
     }
@@ -44,7 +43,7 @@ class Items extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchCategories, fetchItems }, dispatch)
+  return bindActionCreators({ fetchItems }, dispatch)
 }
 
 function mapStateToProps(state) {
