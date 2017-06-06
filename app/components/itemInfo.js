@@ -16,11 +16,14 @@ export default class ItemInfo extends Component {
   }
 
   render() {
+    const { item } = this.props
+
     return (
       <div>
-        <img src={this.props.item.thumbnail} />
-        <p>{this.props.item.name}</p>
-        <p>{this.props.item.priceData.formattedValue}</p>
+        <a href={item.url}><img src={item.thumbnail} /></a>
+        <p>{item.designerData.name}</p>
+        <p>{item.name}</p>
+        <p>{item.priceData.formattedValue}</p>
       </div>
     )
   }
