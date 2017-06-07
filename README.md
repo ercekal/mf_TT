@@ -4,8 +4,8 @@ Add below commands to terminal in order to download the repo, install related pa
 
 	$ git clone https://github.com/ercekal/mf_TT
 	$ cd gousto_tt
-	$ npm install
-	$ npm start
+	$ yarn install
+	$ yarn start
 
 After the server run and compile is done run
 	$ open http://localhost:3000
